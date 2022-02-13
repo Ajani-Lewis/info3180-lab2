@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block main %}
+    <section class="top-section">
+
+        <div id="image">
+            <img src="{{url_for('static', filename='chibi akali.jpg')}}" alt="Profile Picture" />
+        </div>
+
+        <div id="profile-info">
+            <div id="name">Ajani Lewis</div>
+            <div id="username">@badAkalimain</div>
+            <div id="location">St.Catherine, Jamaica</div>
+            <div id="joined">Joined June, 2016</div>
+        </div>
+
+    </section>
+
+    <section id="about-section">
+
+        <div id="about">
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Dolores modi mollitia sed saepe accusamus, maiores laboriosam consequuntur 
+                quidem ea sapiente a repellendus, laudantium porro molestias accusantium 
+                voluptatum animi. Tempore, quos! Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Sapiente consectetur optio et facilis laborum eius atque placeat, 
+                facere reprehenderit asperiores assumenda voluptate aliquam neque sint.
+            </div>
+        </div>
+
+        <div id="account-info">
+
+            <div class="following">
+                <div>13</div>
+                <div>Posts</div>
+            </div>
+            
+            <div class="following">
+                <div>235</div>
+                <div>Following</div>
+            </div>
+            
+            <div class="following">
+                <div>456</div>
+                <div>Followers</div>
+            </div>
+
+        </div>
+
+        <div>
+            <button id="followBtn">Follow</button>
+        </div>
+
+    </section>
+{% endblock %}
