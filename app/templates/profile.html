@@ -4,14 +4,14 @@
     <section class="top-section">
 
         <div id="image">
-            <img src="{{url_for('static', filename='chibi akali.jpg')}}" alt="Profile Picture" />
+            <img src="{{url_for('static', filename='chibi akali.jpg')}}" alt="Profile Picture" id="pro-pic"/>
         </div>
 
         <div id="profile-info">
-            <div id="name">Ajani Lewis</div>
+            <h3 id="name">Ajani Lewis</h3>
             <div id="username">@badAkalimain</div>
             <div id="location">St.Catherine, Jamaica</div>
-            <div id="joined">Joined June, 2016</div>
+            <div id="joined">Joined {{date}}</div>
         </div>
 
     </section>
@@ -48,7 +48,7 @@
 
         </div>
 
-        <div>
+        <div id="btn-section">
             <button id="followBtn">Follow</button>
         </div>
 
